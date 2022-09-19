@@ -1,0 +1,27 @@
+{
+  "name": "training",
+  "version": "1.0.0",
+  "description": "Bootstrap training ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aishatmustapha31/bootstrap-week.git"
+  },
+  "keywords": [
+    "Bootstrap",
+    "html",
+    "css"
+  ],
+  "author": "Aishat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aishatmustapha31/bootstrap-week/issues"
+  },
+  "homepage": "https://github.com/aishatmustapha31/bootstrap-week#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.1"
+  }
+}
