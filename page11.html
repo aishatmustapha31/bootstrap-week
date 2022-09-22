@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="mb-5">Application Form</h3>
+                <form action="" class="row "  >
+                    <h4>Applicant Is:</h4>
+                    
+                    <div class="mb-3 col-12 form-check">
+                        <input type="radio" name="applicant" required checked>
+                        <label for="" class="form-check-label">Borrower</label>
+                    </div>
+                    <div class="mb-3 col-12 form-check">
+                        <input type="radio" name="applicant" required>
+                        <label for="" class="form-check-label">Consigner</label>
+                    </div>
+                    <div class="mb-3 col-12 form-check">
+                        <input type="radio" name="applicant" required>
+                        <label for="" class="form-check-label">Guarantor</label>
+                    </div>
+                    <div class="mb-3 col-6">
+                        <label for="" class="form-label">Name Of Business</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3 col-6">
+                        <label for="" class="form-label">Name of Person</label>
+                        <input type="text" class="form-control" required>
+                        <span class="form-text">Name of Person
+                            Representative
+                        </span>
+                        <span  class="invalid-feedback">
+                                  Name of Person cannot be empty!
+                        </span>
+                    </div>
+
+                    <div class="mb-3 col-4">
+                        <label for="" class="form-label">Years</label>
+                        <input type="text" class="form-control" required>
+                        <span class="form-text">
+                            Years in Business
+                        </span>
+                    </div>
+
+                    
+                    <div class="mb-3 col-4">
+                        <label for="" class="form-label">Position</label>
+                        <input type="text" class="form-control" required>
+                  
+                    </div>
+
+                    <div class="mb-3 col-4">
+                        <label for="" class="form-label">Address</label>
+                        <input type="text" class="form-control" required>
+                        <span class="form-text">
+                       Business Address
+                        </span>
+                    </div>
+
+                    <div class="mb-3  mt-3">
+                        <button type="submit" class="btn btn-danger float-end">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

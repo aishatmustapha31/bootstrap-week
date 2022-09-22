@@ -6,131 +6,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <style>
+        .container{
+            width: 80%;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row  border-2" style="min-height: 200px;">
-            <div class="col-3 border-info">
-                <img src="./images/pexels-pixabay-71104.jpg" alt="" style="min-height:200px; width:200px;">
-
-            </div>
-            <div class="col-8 border-info">
-              <p class="display-2">Commercial Loan Application Form</p> <br>
-            </div>
-        </div>
-
-        <div class="row mt-5">
-            <div class="col-3">
-               <p class="h2">Application Form</p> 
-        </div>
-        </div>
-
-        <div class="row mt-5">
-            <div class="col-4">
-                <p class="h5">Applicant is</p>
-
-            </div>
-
-            <div class="col-2 mb-4">
-                <div class="check-form mb-4">
-                    <input type="checkbox" class="form-check-input" >
-                    <label for="" class="form-check-label">Borrower</label>
+    <div class="container" style="width: 80%;">
+        <div class="row">
+            <div class="col-4 mt-3">
+                <div class="mb-5">
+                    <img src="./images/pexels-pixabay-71104.jpg" alt="" style="height:100px;">
                 </div>
 
-                <div class="check-form mb-4">
-                    <input type="checkbox" class="form-check-input" >
-                    <label for="" class="form-check-label">Consigner</label>
-                </div>
-
-                <div class="check-form mb-4">
-                    <input type="checkbox" class="form-check-input" >
-                    <label for="" class="form-check-label">Guarantor</label>
-                </div> 
-
-                <div class="check-form mb-4">
-                    <input type="checkbox" class="form-check-input" >
-                    <label for="" class="form-check-label">Grantor</label>
-                </div>
-
-                <div class="check-form mb-4">
-                    <input type="checkbox" class="form-check-input">
-                    <label for="" class="form-check-label">Others</label>
-
-                </div>
                 
+            </div>
+
+            <div class="col-4 mt-3">
+                <h3>APPLICATION FORM</h3>
+            </div>
+
+            <form action="" class="row">
+                <h4>Applicant is:</h4>
+
+                
+    
+            
+    
+                
+                    <div class="form-check col-12 mb-3 mt-2">
+                        <input type="radio" name="applicant" required checked>
+                        <label for="" class="form-check-label">Borrower</label>
+                    </div>
+    
+                    <div class="form-check col-12 mb-3 mt-2">
+                        <input type="radio" name="applicant" required>
+                        <label for="" class="form-check-label">Consigner</label>
+                    </div>
+    
+                    <div class="form-check col-12 mb-3 mt-2">
+                        <input type="radio" name="applicant" required >
+                        <label for="" class="form-check-label">Guarantor</label>
+                    </div> 
+    
+                    <div class="form-check col-12 mb-3 mt-2">
+                        <input type="radio" name="applicant" required>
+                        <label for="" class="form-check-label">Grantor</label>
+                    </div>
+    
+                    <div class="form-check col-12 mb-3 mt-2">
+                        <input type="radio" name="applicant" required>
+                        <label for="" class="form-check-label">Others</label>
+    
+                    </div>
+            
+    
+                    <div class="row mt-5">
+                
+    
+                    <div class="col-8 ">
+                    <div class="mb-3 mt-4">
+                        <label for="fname" class="form-label"><h6>Name of Business</h6></label>
+                        <input type="text" id="fname" class="form-control" placeholder="" required >
+                        <span class="form-text">Name of Business</span>
+                    </div>
+    
+                    </div>
+                    </div>
+    
+    
+                    <div class="row mt-5">
+               
+    
+                    <div class="col-8">
+                    <div class="mb-3 mt-4">
+                        <label for="fname" class="form-label"><h6>Name of Person Representative</h6></label>
+                        <input type="text" id="fname" class="form-control" placeholder="" required >
+                        <span class="form-text">Name of Person Representative</span>
+                    </div>
+    
+                    </div>
+                    </div>
+    
+                    <div class="row mt-5">
+                
+                    <div class="col-4">
+                    <div class="mb-3">
+                        <label for="" class="form-label"><h6>Years in Business</h6></label>
+                        <input type="text" id="fname" class="form-control" placeholder="" required>
+                        <span class="form-text">Years in Business</span>
+                    </div>
+                    </div>
+    
+                
+    
+                    <div class="col-4 ">
+                    <div class="mb-3">
+                        <label for="" class="form-label"><h6>Position</h6></label>
+                        <input type="text" id="fname" class="form-control" placeholder="" required>
+                        <span class="form-text">Position</span>
+    
+                    </div>
+                    </div>
+    
+    
+                    </div>
+    
+                    <div class="row mt-5">
+    
+                    <div class="col-8">
+                        <div class="mb-3">
+                        <label for="" class="form-label"><h6>Business Address</h6></label>
+                        <input type="text" class="form-control" id="fname" placeholder="" required>
+                        <span class="form-text">Business Address</span>
+                    </div>
+                    </div>
+                    </div>
+        
+
+        
+
+                    <div class="mb-3  mt-3">
+                        <button type="submit" class="btn btn-danger float-end">Submit</button>
+                    </div>
+                
+            
+
+
+            </form>
                 
 
-
-            </div>
         </div>
+            
 
-        <div class="row mt-5">
-            <div class="col-4 mt-4">
-                <p class="h5">Name of Business</p>
-            </div>
-
-            <div class="col-8">
-                <div class="mb-3 mt-4 form-floating">
-                    <input type="text" id="fname" class="form-control" placeholder="" >
-                    <label for="fname" class="form-label">Name of Business</label>
-                </div>
-
-            </div>
-        </div>
-
-
-        <div class="row mt-5">
-            <div class="col-4 mt-4">
-                <p class="h5">Name of Person <br> Representative</p>
-            </div>
-
-            <div class="col-8">
-                <div class="mb-3 mt-4 form-floating">
-                    <input type="text" id="fname" class="form-control" placeholder="" >
-                    <label for="fname" class="form-label">Name of Person Representative</label>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="row mt-5">
-            <div class="col-3">
-                <div class="h5">Years in Business</div>
-            </div>
-
-            <div class="col-3">
-                <div class="mb-3 form-floating">
-                    <input type="text" id="fname" class="form-control" placeholder="">
-                    <label for="" class="form-label">Years</label>
-                </div>
-            </div>
-
-            <div class="col-2">
-                <div class="h5">Position</div>
-            </div>
-
-            <div class="col-2">
-                <div class="mb-3 form-floating">
-                    <input type="text" id="fname" class="form-control" placeholder="">
-                    <label for="" class="form-label">Position</label>
-                </div>
-            </div>
-
-
-        </div>
-
-        <div class="row mt-5">
-            <div class="col-4">
-                <div class="h5">Business Address</div>
-            </div>
-
-            <div class="col-8">
-                <div class="mb-3 form-floating">
-                    <input type="text" class="form-control" id="fname" placeholder="">
-                    <label for="" class="form-label">Business Address</label>
-                </div>
-            </div>
-        </div>
+               
     </div>
 </body>
 </html>
