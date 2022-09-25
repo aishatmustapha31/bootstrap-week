@@ -6,19 +6,284 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form2</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <style>
+        body{
+            background-image: url(./myblog/images2/pexels-ákos-szabó-440731.jpg);
+        }
+    </style>
 </head>
 <body>
      <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <h3>LEASING AND FINANCE LIMITED</h3>
+                <h2>LEASING AND FINANCE LIMITED</h2>
             </div>
         </div>
         <form action="">
             <fieldset>
-                <legend>Leasing Informa</legend>
+                <legend><h4>Leasing Information</h4></legend>
+                <div class="row mt-3">
+                    <div class="mb-3 mt-3 col-6">
+                        <label for="" class="form-label"><h6>Purpose For Lease</h6></label>
+                        <input type="text" class="form-control form-control-sm" required>
+                        <span class="control-text"></span>
+                    </div>
+    
+                    <div class="mb-3 mt-3 col-6">
+                        <label for="" class="form-label"><h6>Sales Person</h6></label>
+                        <input type="text" class="form-control form-control-sm" required>
+                        <span class="control-text"></span>
+                    </div>
+    
+                </div>
+
+                <div class="row mt-3">
+                    <div class="mb-3 mt-3 col-4">
+                        <label for="" class="form-label">Dealer</label>
+                        <input type="text" class="form-control form-control-sm" required>
+                        <span class="control-text"></span>
+                    </div>
+    
+                    <div class="mb-3 mt-3 col-4">
+                        <label for="" class="form-label"><h6>Date</h6></label>
+                        <input type="date" class="form-control form-control-sm" required>
+                        <span class="control-text"></span>
+                    </div>
+
+                    <div class="col-4 mt-3">
+                        <label for="" class="form-label">PD</label>
+                        <div class="input-group mb-3 col-4">
+                          
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" required>
+                            <span class="input-group-text">.00</span>
+                          </div>
+                        
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="mb-3 mt-3 col-4">
+                        <label for="" class="form-label"><h6>Referral</h6></label>
+                        <input type="text" class="form-control form-control-sm" >
+                        <span class="control-text"></span>
+                    </div>
+
+                    <div class="col-4 mt-3">
+                        <label for="" class="form-label"><h6>Trade Value</h6></label>
+                        <div class="input-group mb-3 col-4">
+                         
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" required>
+                            <span class="input-group-text">.00</span>
+                          </div>
+                        
+                    </div>
+
+
 
             </fieldset>
+
+            <fieldset>
+                
+                    <h4>Applicant Information</h4>
+                    <div class="row mt-3">
+                        <div class="mb-3 mt-3 col-6">
+                            <label for="" class="form-label">Full Name</h6></label>
+                            <input type="text" class="form-control form-control-sm" required>
+                            <span class="form-text">Applicant's Full Legal Name</span>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="mb-3 mt-3 col-4">
+                            <label for="" class="form-label"><h6>Social Insurance Number</h6></label>
+                            <input type="text" class="form-control form-control-sm"required>
+                            
+                        </div>
+
+                        <div class="mb-3 mt-3 col-4">
+                            <label for="" class="form-label"><h6>Date of Birth</h6></label>
+                            <input type="date" class="form-control form-control-sm"required>
+                            
+                        </div>
+                        <div class="mb-3 mt-3 col-4">
+                            <label for="" class="form-label"><h6>Postal Code</h6></label>
+                            <input type="text" class="form-control form-control-sm"required>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="mb-3 col-4">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="">
+                                      State
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Califonia</a></li>
+                                      <li><a class="dropdown-item" href="#">Texas</a></li>
+                                      <li><a class="dropdown-item" href="#">Florida</a></li>
+                                      <li><a class="dropdown-item" href="#">Alaska</a></li>
+                                      <li><a class="dropdown-item" href="#">Arizona</a></li>
+                                      <li><a class="dropdown-item" href="#">Colorado</a></li>
+                                      <li><a class="dropdown-item" href="#">Hawaii</a></li>
+                                      <li><a class="dropdown-item" href="#">Illinois</a></li>
+                                      <li><a class="dropdown-item" href="#">Kentucky</a></li>
+                                    </ul>
+                                  </div>
+                            </div>
+
+                            <div class="mb-3 col-4">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="">
+                                      City
+                                    </button>
+
+                                  </div>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">New York</a></li>
+                                    <li><a class="dropdown-item" href="#">Boston</a></li>
+                                    <li><a class="dropdown-item" href="#">Chicago</a></li>
+                                    <li><a class="dropdown-item" href="#">Washington D.C.</a></li>
+                                    <li><a class="dropdown-item" href="#">San Diego</a></li>
+                                    <li><a class="dropdown-item" href="#">Los Angeles</a></li>
+                                    <li><a class="dropdown-item" href="#">San Jose</a></li>
+                                    <li><a class="dropdown-item" href="#">Seattle</a></li>
+                                    <li><a class="dropdown-item" href="#">Denver</a></li>
+                                  </ul>
+
+
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="mb-3 mt-3 col-6">
+                            <label for="" class="form-label"><h6>Applicant's Current Employer</h6></label>
+                            <input type="text" class="form-control form-control-sm"required>
+                            
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="mb-3 mt-3 col-4">
+                                <label for="" class="form-label">Position</label>
+                                <input type="text" class="form-control form-control-sm"required>
+                                
+                            </div> 
+                            
+                            <div class="col-4 mt-3">
+                                <label for="" class="form-label">Monthly Income:</label>
+                                <div class="input-group mb-3 col-4">
+                                    <span class="input-group-text">$</span>
+                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"required>
+                                    <span class="input-group-text">.00</span>
+                                  </div>
+                                
+                            </div>
+                        </div> 
+                        
+                        <div class="row mt-3">
+                            <div class="mb-3 mt-3 col-6">
+                                <label for="" class="form-label">Applicant's Previous Employer</label>
+                                <input type="text" class="form-control form-control-sm" required>
+                                
+                            </div>
+    
+                            <div class="row mt-3">
+                                <div class="mb-3 mt-3 col-4">
+                                    <label for="" class="form-label">Position</label>
+                                    <input type="text" class="form-control form-control-sm"required>
+                                    
+                                </div> 
+                                
+                                <div class="col-4 mt-3">
+                                    <label for="" class="form-label">Monthly Income:</label>
+                                    <div class="input-group mb-3 col-4">
+                                        <span class="input-group-text">$</span>
+                                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" required>
+                                        <span class="input-group-text">.00</span>
+                                      </div>
+                                    
+                                </div>
+                            </div> 
+
+                            <div class="row mt-3">
+                                <div class="mb-3 mt-3 col-4">
+                                    <label for="" class="form-label">Applicant's Current Vehicle </label>
+                                    <input type="text" class="form-control form-control-sm"required>
+                                    
+                                </div> 
+                                
+                                <div class="col-4 mt-3">
+                                    <label for="" class="form-label">Monthly Insurance:</label>
+                                    <div class="input-group mb-3 col-4">
+                                        <span class="input-group-text">$</span>
+                                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"required>
+                                        <span class="input-group-text">.00</span>
+                                      </div>
+                                    
+                                </div>
+                            </div> 
+                            
+                       
+                    
+
+                    
+                        
+                    
+
+                    <h4>Guarantor's Information</h4>
+                    <div class="row mt-3">
+                        <div class="mb-3 mt-3 col-6">
+                            <label for="" class="form-label"><h6>Full Name</h6></label>
+                            <input type="text" class="form-control form-control-sm"required>
+                            <span class="form-text">Guarantor's Full Legal Name</span>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="mb-3 mt-3 col-6">
+                            <label for="" class="form-label"><h6>Address</h6></label>
+                            <input type="text" class="form-control form-control-sm"required>
+                            
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4 mt-5">
+                            <div class="input-group mb-3 col-4">
+                                <label for="" class="form-label"><h6>Phone Number:</h6></label>
+                                <span class="input-group-text">+234</span>
+                                <input type="text" class="form-control" aria-label="numbers"required>
+                                
+                            </div>
+                        </div>
+                        <div class="col-4 mt-5">
+                            <div class="input-group mb-3 col-4">
+                                <label for="" class="form-label"><h6>Office Phone Number:</h6></label>
+                                <span class="input-group-text">+234</span>
+                                <input type="text" class="form-control" aria-label="numbers"required>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3  mt-3">
+                        <button type="submit" class="btn btn-primary btn-lg float-end">Submit</button>
+                    </div>
+                
+
+                         
+                    
+
+
+
+
+
+
+            </fieldset>   
 
         </form>
      </div>
